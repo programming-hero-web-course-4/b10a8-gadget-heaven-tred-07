@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const Product = ({product}) => {
     return (
-        <div className='border-[2px] border-solid border-black w-[30%] p-[25px] bg-[#FFFFFF]'>
+        <div className='p-[25px] bg-[#FFFFFF]'>
             <img src={product.product_image} alt="" className='w-[282px] h-[181px] m-auto border-[10px]
             border-solid border-[#D9D9D9] rounded-2xl
             '/>
