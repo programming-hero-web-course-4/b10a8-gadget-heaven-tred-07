@@ -2,7 +2,7 @@
     {
         "product_id": "1",
         "product_title": "Apple iPhone 15 Pro Max",
-        "product_image": "https://example.com/iphone15promax.jpg",
+        "product_image": "/images/iphone15.jpeg",
         "category": "Smartphones",
         "price": 1299,
         "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
@@ -19,7 +19,7 @@
     {
         "product_id": "2",
         "product_title": "Samsung Galaxy S24 Ultra",
-        "product_image": "https://example.com/galaxys24ultra.jpg",
+        "product_image": "/images/s24.jpeg",
         "category": "Smartphones",
         "price": 1199,
         "description": "The Samsung Galaxy S24 Ultra offers cutting-edge technology and performance.",
@@ -36,7 +36,7 @@
     {
         "product_id": "3",
         "product_title": "Google Pixel 8 Pro",
-        "product_image": "https://example.com/pixel8pro.jpg",
+        "product_image": "/images/s24.jpeg",
         "category": "Smartphones",
         "price": 999,
         "description": "The Google Pixel 8 Pro is known for its exceptional camera and software experience.",
@@ -53,7 +53,7 @@
     {
         "product_id": "4",
         "product_title": "OnePlus 12",
-        "product_image": "https://example.com/oneplus12.jpg",
+        "product_image": "/images/oneplus12.jpeg",
         "category": "Smartphones",
         "price": 899,
         "description": "The OnePlus 12 offers flagship performance at a competitive price.",
@@ -70,7 +70,7 @@
     {
         "product_id": "5",
         "product_title": "Xiaomi Mi 13",
-        "product_image": "https://example.com/mi13.jpg",
+        "product_image": "/images/mi13.jpeg",
         "category": "Smartphones",
         "price": 799,
         "description": "The Xiaomi Mi 13 is a powerful smartphone with a sleek design.",
@@ -87,7 +87,7 @@
     {
         "product_id": "6",
         "product_title": "Sony Xperia 1 IV",
-        "product_image": "https://example.com/xperia1iv.jpg",
+        "product_image": "/images/mi13.jpeg",
         "category": "Smartphones",
         "price": 1099,
         "description": "The Sony Xperia 1 IV is designed for multimedia enthusiasts.",
@@ -104,7 +104,7 @@
     {
         "product_id": "7",
         "product_title": "Huawei P60 Pro",
-        "product_image": "https://example.com/p60pro.jpg",
+        "product_image": "/images/p60.jpeg",
         "category": "Smartphones",
         "price": 999,
         "description": "The Huawei P60 Pro features a powerful camera system and sleek design.",
@@ -121,7 +121,7 @@
     {
         "product_id": "8",
         "product_title": "Asus ROG Phone 6",
-        "product_image": "https://example.com/rogphone6.jpg",
+        "product_image": "/images/rog6.jpeg",
         "category": "Smartphones",
         "price": 999,
         "description": "The Asus ROG Phone 6 is built for gaming enthusiasts.",
@@ -138,7 +138,7 @@
     {
         "product_id": "9",
         "product_title": "Oppo Find X5 Pro",
-        "product_image": "https://example.com/findx5pro.jpg",
+        "product_image": "/images/rog6.jpeg",
         "category": "Smartphones",
         "price": 1099,
         "description": "The Oppo Find X5 Pro offers a premium design and advanced camera technology.",
@@ -155,7 +155,7 @@
     {
         "product_id": "10",
         "product_title": "Vivo X80 Pro",
-        "product_image": "https://example.com/x80pro.jpg",
+        "product_image": "/images/x80.jpeg",
         "category": "Smartphones",
         "price": 899,
         "description": "The Vivo X80 Pro is known for its exceptional camera performance.",
@@ -169,89 +169,174 @@
         "availability": true,
         "rating": 4.0
     },
-    {
-        "product_id": "11",
-        "product_title": "Realme GT 2 Pro",
-        "product_image": "https://example.com/gt2pro.jpg",
-        "category": "Smartphones",
-        "price": 799,
-        "description": "The Realme GT 2 Pro offers flagship features at an affordable price.",
-        "specification": [
-            "6.7-inch AMOLED display",
-            "Snapdragon 8 Gen 1 chip",
-            "Triple-camera system (50MP Main, 50MP Ultrawide, 2MP Macro)",
-            "5000mAh battery",
-            "Up to 256GB storage"
-        ],
-        "availability": true,
-        "rating": 4.0
-    },
-    {
-        "product_id": "12",
-        "product_title": "Motorola Edge 30 Ultra",
-        "product_image": "https://example.com/edge30ultra.jpg",
-        "category": "Smartphones",
-        "price": 899,
-        "description": "The Motorola Edge 30 Ultra offers a sleek design and powerful performance.",
-        "specification": [
-            "6.7-inch OLED display",
-            "Snapdragon 8+ Gen 1 chip",
-            "Triple-camera system (200MP Main, 50MP Ultrawide, 12MP Telephoto)",
-            "4500mAh battery",
-            "Up to 512GB storage"
-        ],
-        "availability": true,
-        "rating": 4.0
-    },
-    {
-        "product_id": "13",
-        "product_title": "Nokia XR30",
-        "product_image": "https://example.com/xr30.jpg",
-        "category": "Smartphones",
-        "price": 699,
-        "description": "The Nokia XR30 is a durable smartphone with a focus on sustainability.",
-        "specification": [
-            "6.5-inch LCD display",
-            "Snapdragon 778G chip",
-            "Triple-camera system (64MP Main, 13MP Ultrawide, 5MP Depth)",
-            "4500mAh battery",
-            "Up to 256GB storage"
-        ],
-        "availability": true,
-        "rating": 4.0
-    },
-    {
-        "product_id": "14",
-        "product_title": "LG Velvet 2 Pro",
-        "product_image": "https://example.com/velvet2pro.jpg",
-        "category": "Smartphones",
-        "price": 799,
-        "description": "The LG Velvet 2 Pro offers a unique design and solid performance.",
-        "specification": [
-            "6.8-inch OLED display",
-            "Snapdragon 888 chip",
-            "Triple-camera system (64MP Main, 16MP Ultrawide, 8MP Telephoto)",
-            "4300mAh battery",
-            "Up to 256GB storage"
-        ],
-        "availability": true,
-        "rating": 4.0
-    },
-    {
-        "product_id": "15",
-        "product_title": "ZTE Axon 40 Ultra",
-        "product_image": "https://example.com/axon40ultra.jpg",
-        "category": "Smartphones",
-        "price": 899,
-        "description": "The ZTE Axon 40 Ultra is a powerful smartphone with a stunning display.",
-        "specification": [
-            "6.8-inch AMOLED display",
-            "Snapdragon 8 Gen 1 chip",
-            "Triple-camera system (64MP Main, 64MP Ultrawide, 64MP Telephoto)",
-            "5000mAh battery",
-            "Up to 1TB storage"
-        ],
-        "availability": true,
-        "rating": 4.0
-    }
+        {
+            "product_id": "16",
+            "product_title": "MacBook Pro 16-inch",
+            "product_image": "/images/m3.jpeg",
+            "category": "Laptops",
+            "price": 2499,
+            "description": "The MacBook Pro 16-inch offers powerful performance for professionals.",
+            "specification": [
+                "16-inch Retina display",
+                "Apple M2 Pro chip",
+                "16GB RAM",
+                "1TB SSD",
+                "Up to 21 hours battery life"
+            ],
+            "availability": true,
+            "rating": 4.8
+        },
+        {
+            "product_id": "17",
+            "product_title": "Dell XPS 15",
+            "product_image": "/images/xps15.jpeg",
+            "category": "Laptops",
+            "price": 1999,
+            "description": "The Dell XPS 15 is known for its stunning display and performance.",
+            "specification": [
+                "15.6-inch 4K UHD display",
+                "Intel Core i7-12700H",
+                "16GB RAM",
+                "512GB SSD",
+                "Up to 12 hours battery life"
+            ],
+            "availability": true,
+            "rating": 4.7
+        },
+        {
+            "product_id": "18",
+            "product_title": "HP Spectre x360",
+            "product_image": "/images/x360.jpeg",
+            "category": "Laptops",
+            "price": 1499,
+            "description": "The HP Spectre x360 is a versatile 2-in-1 laptop with a sleek design.",
+            "specification": [
+                "13.5-inch OLED display",
+                "Intel Core i7-1260P",
+                "16GB RAM",
+                "1TB SSD",
+                "Up to 15 hours battery life"
+            ],
+            "availability": true,
+            "rating": 4.6
+        },
+        {
+            "product_id": "19",
+            "product_title": "Lenovo ThinkPad X1 Carbon",
+            "product_image": "/images/x360.jpeg",
+            "category": "Laptops",
+            "price": 1799,
+            "description": "The Lenovo ThinkPad X1 Carbon is a lightweight and durable business laptop.",
+            "specification": [
+                "14-inch WQHD display",
+                "Intel Core i7-1280P",
+                "16GB RAM",
+                "512GB SSD",
+                "Up to 18 hours battery life"
+            ],
+            "availability": true,
+            "rating": 4.5
+        },
+        {
+            "product_id": "20",
+            "product_title": "Asus ROG Zephyrus G14",
+            "product_image": "/images/g14.jpeg",
+            "category": "Laptops",
+            "price": 1599,
+            "description": "The Asus ROG Zephyrus G14 is a powerful gaming laptop with a compact design.",
+            "specification": [
+                "14-inch QHD display",
+                "AMD Ryzen 9 6900HS",
+                "16GB RAM",
+                "1TB SSD",
+                "Up to 10 hours battery life"
+            ],
+            "availability": true,
+            "rating": 4.4
+        },
+        {
+            "product_id": "21",
+            "product_title": "Apple AirPods Pro",
+            "product_image": "/images/airpods.jpeg",
+            "category": "Earbuds",
+            "price": 249,
+            "description": "The Apple AirPods Pro offer active noise cancellation and a comfortable fit.",
+            "specification": [
+                "Active Noise Cancellation",
+                "Transparency mode",
+                "Spatial audio",
+                "Up to 4.5 hours of listening time",
+                "Wireless charging case"
+            ],
+            "availability": true,
+            "rating": 4.8
+        },
+        {
+            "product_id": "22",
+            "product_title": "Samsung Galaxy Buds2 Pro",
+            "product_image": "./images/buds2.jpeg",
+            "category": "Earbuds",
+            "price": 229,
+            "description": "The Samsung Galaxy Buds2 Pro offer high-quality sound and noise cancellation.",
+            "specification": [
+                "Active Noise Cancellation",
+                "24-bit Hi-Fi sound",
+                "Up to 5 hours of listening time",
+                "Wireless charging case",
+                "IPX7 water resistance"
+            ],
+            "availability": true,
+            "rating": 4.7
+        },
+        {
+            "product_id": "23",
+            "product_title": "Sony WF-1000XM4",
+            "product_image": "/images/wf.jpeg",
+            "category": "Earbuds",
+            "price": 279,
+            "description": "The Sony WF-1000XM4 earbuds provide industry-leading noise cancellation and sound quality.",
+            "specification": [
+                "Active Noise Cancellation",
+                "High-resolution audio",
+                "Up to 8 hours of listening time",
+                "Wireless charging case",
+                "IPX4 water resistance"
+            ],
+            "availability": true,
+            "rating": 4.6
+        },
+        {
+            "product_id": "24",
+            "product_title": "Bose QuietComfort Earbuds",
+            "product_image": "/images/quietcomfort.jpeg",
+            "category": "Earbuds",
+            "price": 279,
+            "description": "The Bose QuietComfort Earbuds offer world-class noise cancellation and comfort.",
+            "specification": [
+                "Active Noise Cancellation",
+                "Up to 6 hours of listening time",
+                "Wireless charging case",
+                "IPX4 water resistance",
+                "Customizable sound"
+            ],
+            "availability": true,
+            "rating": 4.5
+        },
+        {
+            "product_id": "25",
+            "product_title": "Jabra Elite 7 Pro",
+            "product_image": "/images/jabra.jpeg",
+            "category": "Earbuds",
+            "price": 199,
+            "description": "The Jabra Elite 7 Pro earbuds offer excellent sound quality and call performance.",
+            "specification": [
+                "Active Noise Cancellation",
+                "Up to 8 hours of listening time",
+                "Wireless charging case",
+                "IP57 water and dust resistance",
+                "MultiSensor Voice technology"
+            ],
+            "availability": true,
+            "rating": 4.4
+        }
 ]

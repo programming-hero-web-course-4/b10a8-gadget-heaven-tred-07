@@ -1,6 +1,7 @@
 import React from 'react';
 import wishList from '/images/wishList.png'
 import cart from '/images/cart.png'
+import { NavLink } from 'react-router-dom';
 const Navbar = () => {
     return (
   <div className="navbar bg-base-100 shadow-sm w-[90%] m-auto">
@@ -12,7 +13,7 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Home</a></li>
+        <li><NavLink to="/">Home</NavLink></li>
         <li>
           <a href="">Statistics</a>
         </li>
@@ -23,7 +24,7 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Home</a></li>
+      <li><NavLink to="/">Home</NavLink></li>
       <li>
       <a href="">Statistics</a>
       </li>
