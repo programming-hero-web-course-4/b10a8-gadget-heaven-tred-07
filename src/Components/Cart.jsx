@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Cart = ({product}) => {
+const Cart = ({product,removeProduct}) => {
+
     return (
         <div className='flex items-center gap-[10px] w-[80%] m-auto'>
             <div className='w-[25%]'><img className='w-[150px] h-[100px]' src={product.product_image} alt="" /></div>
@@ -10,7 +11,7 @@ const Cart = ({product}) => {
             <h1>Price: $ {product.price}</h1>
             </div>
             <div className='w-[5%] items-center'>
-                <button><img className='w-[25px] h-[25px]' src="../images/remove.png" alt="" /></button>
+                <button onClick={()=>removeProduct({product})}><img className='w-[25px] h-[25px]' src="../images/remove.png" alt="" /></button>
             </div>
         </div>
     );

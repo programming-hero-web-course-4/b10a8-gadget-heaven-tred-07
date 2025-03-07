@@ -36,4 +36,13 @@ const getCartProducts=()=>{
     }
 }
 
+
+const removeProduct=(item)=>{
+    
+    const cartItems=JSON.parse(localStorage.getItem("cartItems"))
+    const newItems=cartItems.filter(el=>(el.product_id!=item.product.product_id))
+    localStorage.setItem("cartItems",JSON.stringify(newItems))
+    console.log("removeProduct func",item,cartItems,newItems)
+}
+
 export {saveCart,getCartAmount,getCartProducts}
