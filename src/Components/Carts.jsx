@@ -22,6 +22,20 @@ const Carts = () => {
         else setProducts([])
     }, [])
 
+    const [isSorted,setIsSorted]=useState(false)
+    const descending=()=>{
+        if(isSorted){
+        const sortProducts=[...products].sort((a,b)=> a.price - b.price )
+        setProducts(sortProducts)
+        setIsSorted(false)
+        }
+        else{
+            const sortProducts=[...products].sort((a,b)=> b.price - a.price )
+            setProducts(sortProducts)
+            setIsSorted(true)
+        }
+        console.log("Sorted",products);
+    }
 
     const removeProduct = (item) => {
 
@@ -70,7 +84,7 @@ const Carts = () => {
                 </div>
                 <div className='flex justify-evenly gap-[5px] items-center w-[40%]'>
                     <h1 className='text-[1.25rem] font-bold'>Total Cost: {cartBalance}</h1>
-                    <button className='btn'>Sort By Price</button>
+                    <button className='btn' onClick={descending}>Sort By Price</button>
                     {cartBalance>0?<button className='btn btn-primary' onClick={payment}>Purchase</button>:
                     <button className='btn btn-primary btn-disabled' onClick={payment}>Purchase</button>}
                     <dialog id="my_modal_1" className="modal">

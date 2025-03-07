@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import {saveCart,saveWish} from './dataSync.js'
 import { ToastContainer, toast } from 'react-toastify';
+import Star from './Star.jsx';
 import Modal from './Modal.jsx';
 const ProductDetails = () => {
     const data=useLoaderData()
@@ -46,7 +47,8 @@ const ProductDetails = () => {
             {/* <h1 className='text-left font-bold'>{product.category}</h1> */}
             <h1 className='text-left py-[2.5px]'>{product.description}</h1>
             <h1 className='text-left py-[2.5px]'> <span className='font-bold'>Specification:</span> <br /> {product.specification}</h1>
-            <h1 className='text-left py-[2.5px]'> Rating: {product.rating}</h1>
+            <h1 className='text-left py-[2.5px] flex gap-[5px] items-center'> Rating: <Star rating={product.rating}/> {product.rating}</h1>
+            
             <div className='flex justify-items-start py-[2.5px]'>
             <button className={`btn btn-primary rounded-[10px] flex gap-[10px] ${isCart?"btn-disabled":" "}`} onClick={()=>handleCart({product})}>
                 <h1>Add To Cart</h1>
