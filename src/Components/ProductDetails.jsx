@@ -1,11 +1,16 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
-
+import {saveCart} from './dataSync.js'
 const ProductDetails = () => {
     const data=useLoaderData()
     const {product_id}=useParams()
     const product=data.find(el=>(el.product_id==parseInt(product_id)))
     console.log(product_id,product);
+
+    const handleCart=(item)=>{
+        saveCart(item)
+    }
+
     return (
         <div className='w-[100%]'>
         <div className='bg-[#9538E2] pb-[150px] pt-[70px]'>
@@ -24,7 +29,7 @@ const ProductDetails = () => {
             <h1 className='text-center font-bold'>{product.specification}</h1>
             <h1 className='text-center font-bold'>{product.availability}</h1>
             <h1 className='text-center font-bold'>{product.rating}</h1>
-            <div className='flex justify-center'><button className='btn btn-outline btn-primary'>Add To Cart</button></div></div>
+            <div className='flex justify-center'><button className='btn btn-outline btn-primary' onClick={()=>handleCart({product})}>Add To Cart</button></div></div>
         </div>
         </div>
         </div>

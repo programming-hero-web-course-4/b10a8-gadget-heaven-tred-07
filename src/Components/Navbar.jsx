@@ -17,7 +17,7 @@ const Navbar = () => {
         <li>
           <a href="">Statistics</a>
         </li>
-        <li><a>Dashboard</a></li>
+        <li><NavLink to="/dasboard">Dashboard</NavLink></li>
       </ul>
     </div>
     <a className="btn btn-ghost text-xl">Gadget Heaven</a>
@@ -28,7 +28,7 @@ const Navbar = () => {
       <li>
       <a href="">Statistics</a>
       </li>
-      <li><a>Dashboard</a></li>
+      <li><NavLink to="/dasboard">Dashboard</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end flex gap-[5px]">
