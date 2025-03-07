@@ -2,7 +2,10 @@ import React from 'react';
 
 const Footer = () => {
     return (
- <footer className="footer sm:footer-horizontal bg-base-200 text-neutral-content flex justify-between w-[80%] m-auto">
+ <footer>
+  <h1 className='text-[2.5rem] text-center font-bold pt-[100px]'>Gadget Heaven</h1>
+  <p className='text-[1.5rem] text-center font-medium'>Leading the way in cutting-edge technology and innovations.</p>
+  <div className='flex py-[100px] justify-between footer sm:footer-horizontal bg-base-200 text-neutral-content w-[80%] m-auto'>
   <nav>
     <h6 className="footer-title text-black text-center">Services</h6>
     <a className="link link-hover text-black">Branding</a>
@@ -23,6 +26,8 @@ const Footer = () => {
     <a className="link link-hover text-black">Privacy policy</a>
     <a className="link link-hover text-black">Cookie policy</a>
   </nav>
+  </div>
+  
 </footer>
     );
 };

@@ -7,15 +7,16 @@ const saveCart=(item)=>{
     }
     const isExist=cartItems.find(el=>(el.product_id===item.product.product_id))
     if(isExist){
-        alert("Already exist")
+        // alert("Already exist")
+        return false
     }
     else{
     cartItems.push(item.product)
     balance=balance+parseInt(item.product.price)
     localStorage.setItem("balance",JSON.stringify(balance))
     localStorage.setItem("cartItems",JSON.stringify(cartItems))
+    return true
     }
-    console.log(cartItems,balance)
 }
 
 
@@ -37,12 +38,22 @@ const getCartProducts=()=>{
 }
 
 
-const removeProduct=(item)=>{
-    
-    const cartItems=JSON.parse(localStorage.getItem("cartItems"))
-    const newItems=cartItems.filter(el=>(el.product_id!=item.product.product_id))
-    localStorage.setItem("cartItems",JSON.stringify(newItems))
-    console.log("removeProduct func",item,cartItems,newItems)
+const saveWish=(item)=>{
+    console.log(typeof(item),item.product.product_id,item.product.price)
+    let cartItems=[]
+    if(localStorage.getItem("wishItems")){
+        cartItems=JSON.parse(localStorage.getItem("wishItems"))
+    }
+    const isExist=cartItems.find(el=>(el.product_id===item.product.product_id))
+    if(isExist){
+        // alert("Already exist")
+        return false
+    }
+    else{
+    cartItems.push(item.product)
+    localStorage.setItem("wishItems",JSON.stringify(cartItems))
+    return true
+    }
 }
 
-export {saveCart,getCartAmount,getCartProducts}
+export {saveCart,getCartAmount,getCartProducts,saveWish}
