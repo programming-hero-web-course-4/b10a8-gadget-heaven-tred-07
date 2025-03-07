@@ -10,7 +10,7 @@ import Root from './Components/Root.jsx';
 import Home from './Components/Home.jsx';
 import ProductDetails from './Components/ProductDetails.jsx';
 import Dashboard from './Components/Dashboard.jsx';
-
+import Order from './Components/Orders.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
       {
         path:"dasboard",
         element: <Dashboard></Dashboard>
+      },
+      {
+        path:"order",
+        element: <Order></Order>
       }
     ]
   },

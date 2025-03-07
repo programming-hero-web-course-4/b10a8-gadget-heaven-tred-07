@@ -56,4 +56,23 @@ const saveWish=(item)=>{
     }
 }
 
-export {saveCart,getCartAmount,getCartProducts,saveWish}
+
+const getOrders=()=>{
+    let items=JSON.parse(localStorage.getItem("orderItems"));
+    let orders=[]
+        if(items){
+            items.forEach(el=>
+            {
+                el.forEach(pro=>{
+                    orders=[...orders,pro]
+                })
+            }
+            )
+            return orders
+        }
+        else{
+            return []
+        }
+}
+
+export {saveCart,getCartAmount,getCartProducts,saveWish,getOrders}

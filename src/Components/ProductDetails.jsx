@@ -11,7 +11,12 @@ const ProductDetails = () => {
 
     const handleCart=(item)=>{
         if(saveCart(item))notify("Successfully add to cart")
-        else notify("Already Exist")
+        else notify("Already Exist In Cart")
+    }
+
+    const handleWish=(item)=>{
+        if(saveWish(item))notify("Successfully add to wish list")
+        else notify("Already Exist In Wish List")
     }
 
     const notify = (str) => toast(`${str}`);
@@ -42,7 +47,7 @@ const ProductDetails = () => {
                 <h1>Add To Cart</h1>
                 <img src="/images/cartWhite.png" alt="" className='w-[20px] h-[20px]'/> 
             </button>
-            <button onClick={()=>saveWish({product})} className='btn btn-outline rounded-[55%] p-[10px] ml-[10px]'><img src="/images/wishList.png" alt="" className='w-[20px] h-[20px]'/></button>
+            <button onClick={()=>handleWish({product})} className='btn btn-outline rounded-[55%] p-[10px] ml-[10px]'><img src="/images/wishList.png" alt="" className='w-[20px] h-[20px]'/></button>
             </div>
             </div>
         </div>
