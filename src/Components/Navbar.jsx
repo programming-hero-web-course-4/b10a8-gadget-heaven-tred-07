@@ -1,8 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import wishList from '/images/wishList.png'
 import cart from '/images/cart.png'
 import { NavLink } from 'react-router-dom';
 const Navbar = () => {
+  const [isHome,setIsHome]=useState(true)
+  const [isStatistics,setIsStatistics]=useState(false)
+  const [isDashboard,setIsDashboard]=useState(false)
+  const [isOrder,setIsOrder]=useState(false)
+
+  const handle1=()=>{
+    setIsHome(true)
+    setIsStatistics(false)
+    setIsDashboard(false)
+    setIsOrder(false)
+  }
+  const handle2=()=>{
+    setIsHome(false)
+    setIsStatistics(true)
+    setIsDashboard(false)
+    setIsOrder(false)
+  }
+
+  const handle3=()=>{
+    setIsHome(false)
+    setIsStatistics(false)
+    setIsDashboard(true)
+    setIsOrder(false)
+  }
+
+  const handle4=()=>{
+    setIsHome(false)
+    setIsStatistics(false)
+    setIsDashboard(false)
+    setIsOrder(true)
+  }
     return (
   <div className="navbar bg-base-100 w-[80%] m-auto">
   <div className="navbar-start">
@@ -13,24 +44,24 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/" className={`${isHome?"btn btn-primary":"btn"}`}>Home</NavLink></li>
         <li>
-          <a href="">Statistics</a>
+          <a href="" className={`${isStatistics?"btn btn-primary":""}`} onClick={handle2}>Statistics</a>
         </li>
-        <li><NavLink to="/dasboard">Dashboard</NavLink></li>
-        <li><NavLink to="/order">Your Orders</NavLink></li>
+        <li><NavLink to="/dasboard" className={`${isDashboard?"btn btn-primary":""}`} onClick={handle3}>Dashboard</NavLink></li>
+        <li><NavLink to="/order" className={`${isOrder?"btn btn-primary":""}`} onClick={handle4}>Your Orders</NavLink></li>
       </ul>
     </div>
     <NavLink to="/" className="btn btn-ghost text-xl">Gadget Heaven</NavLink>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><NavLink to="/">Home</NavLink></li>
+      <li><NavLink to="/" className={`${isHome?"btn btn-primary":""}`} onClick={handle1}>Home</NavLink></li>
       <li>
-      <a href="">Statistics</a>
+      <a href="" className={`${isStatistics?"btn btn-primary":""}`} onClick={handle2}>Statistics</a>
       </li>
-      <li><NavLink to="/dasboard">Dashboard</NavLink></li>
-      <li><NavLink to="/order">Your Orders</NavLink></li>
+      <li><NavLink to="/dasboard" className={`${isDashboard?"btn btn-primary":""}`} onClick={handle3}>Dashboard</NavLink></li>
+      <li><NavLink to="/order" className={`${isOrder?"btn btn-primary":""}`} onClick={handle4}>Your Orders</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end flex gap-[5px]">

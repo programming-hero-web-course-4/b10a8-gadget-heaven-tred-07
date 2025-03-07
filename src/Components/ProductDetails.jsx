@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import {saveCart,saveWish} from './dataSync.js'
 import { ToastContainer, toast } from 'react-toastify';
@@ -9,14 +9,19 @@ const ProductDetails = () => {
     const product=data.find(el=>(el.product_id==parseInt(product_id)))
     console.log(product_id,product);
 
+    const [isCart,setCart]=useState(false)
+    const [isWish,setWish]=useState(false)
+
     const handleCart=(item)=>{
         if(saveCart(item))notify("Successfully add to cart")
         else notify("Already Exist In Cart")
+        setCart(true)
     }
 
     const handleWish=(item)=>{
         if(saveWish(item))notify("Successfully add to wish list")
         else notify("Already Exist In Wish List")
+        setWish(true)
     }
 
     const notify = (str) => toast(`${str}`);
@@ -43,11 +48,11 @@ const ProductDetails = () => {
             <h1 className='text-left py-[2.5px]'> <span className='font-bold'>Specification:</span> <br /> {product.specification}</h1>
             <h1 className='text-left py-[2.5px]'> Rating: {product.rating}</h1>
             <div className='flex justify-items-start py-[2.5px]'>
-            <button className='btn btn-primary rounded-[10px] flex gap-[10px]' onClick={()=>handleCart({product})}>
+            <button className={`btn btn-primary rounded-[10px] flex gap-[10px] ${isCart?"btn-disabled":" "}`} onClick={()=>handleCart({product})}>
                 <h1>Add To Cart</h1>
                 <img src="/images/cartWhite.png" alt="" className='w-[20px] h-[20px]'/> 
             </button>
-            <button onClick={()=>handleWish({product})} className='btn btn-outline rounded-[55%] p-[10px] ml-[10px]'><img src="/images/wishList.png" alt="" className='w-[20px] h-[20px]'/></button>
+            <button onClick={()=>handleWish({product})} className={`btn btn-outline rounded-[55%] p-[10px] ml-[10px] ${isWish?"btn-disabled":""}`}><img src="/images/wishList.png" alt="" className='w-[20px] h-[20px]'/></button>
             </div>
             </div>
         </div>
