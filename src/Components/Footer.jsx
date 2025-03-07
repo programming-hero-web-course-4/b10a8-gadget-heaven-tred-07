@@ -2,10 +2,10 @@ import React from 'react';
 
 const Footer = () => {
     return (
- <footer>
+ <footer className='bg-base-200'>
   <h1 className='text-[2.5rem] text-center font-bold pt-[100px]'>Gadget Heaven</h1>
   <p className='text-[1.5rem] text-center font-medium'>Leading the way in cutting-edge technology and innovations.</p>
-  <div className='flex py-[100px] justify-between footer sm:footer-horizontal bg-base-200 text-neutral-content w-[80%] m-auto'>
+  <div className='flex py-[100px] justify-between footer sm:footer-horizontal text-neutral-content w-[80%] m-auto'>
   <nav>
     <h6 className="footer-title text-black text-center">Services</h6>
     <a className="link link-hover text-black">Branding</a>

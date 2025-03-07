@@ -4,7 +4,7 @@ import cart from '/images/cart.png'
 import { NavLink } from 'react-router-dom';
 const Navbar = () => {
     return (
-  <div className="navbar bg-base-100 shadow-sm w-[90%] m-auto">
+  <div className="navbar bg-base-100 w-[80%] m-auto">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -34,8 +34,8 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end flex gap-[5px]">
-  <a className="btn rounded-[45%]"><img src={cart} alt="" className='h-[25px] w-[17px]'/></a>
-    <a className="btn rounded-[45%]"><img src={wishList} alt="" className='h-[25px] w-[17px]'/></a>
+  <a className="btn rounded-[45%] py-[25px]"><img src={cart} alt="" className='h-[25px] w-[17px]'/></a>
+    <a className="btn rounded-[45%] py-[25px]"><img src={wishList} alt="" className='h-[25px] w-[17px]'/></a>
   </div>
 </div>
     );
