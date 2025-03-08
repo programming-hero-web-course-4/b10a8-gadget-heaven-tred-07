@@ -49,7 +49,7 @@ const Navbar = () => {
           <a href="" className={`${isStatistics?"btn btn-primary":""}`} onClick={handle2}>Statistics</a>
         </li>
         <li><NavLink to="/dasboard" className={`${isDashboard?"btn btn-primary":""}`} onClick={handle3}>Dashboard</NavLink></li>
-        <li><NavLink to="/order" className={`${isOrder?"btn btn-primary":""}`} onClick={handle4}>Your Orders</NavLink></li>
+        <li><NavLink to="/order" className={`${isOrder?"btn btn-primary":""}`} onClick={handle4}>Order History</NavLink></li>
       </ul>
     </div>
     <NavLink to="/" className="btn btn-ghost text-xl">Gadget Heaven</NavLink>
@@ -61,7 +61,7 @@ const Navbar = () => {
       <a href="" className={`${isStatistics?"btn btn-primary":""}`} onClick={handle2}>Statistics</a>
       </li>
       <li><NavLink to="/dasboard" className={`${isDashboard?"btn btn-primary":""}`} onClick={handle3}>Dashboard</NavLink></li>
-      <li><NavLink to="/order" className={`${isOrder?"btn btn-primary":""}`} onClick={handle4}>Your Orders</NavLink></li>
+      <li><NavLink to="/order" className={`${isOrder?"btn btn-primary":""}`} onClick={handle4}>Order History</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end flex gap-[5px]">
